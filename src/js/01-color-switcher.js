@@ -10,6 +10,7 @@ buttonStart.addEventListener('click', startChangeBgColor);
 buttonStop.addEventListener('click', stopChangeBgColor);
 
 function startChangeBgColor() {
+	body.style.backgroundColor = getRandomHexColor();
 	timerId = setInterval(() => {body.style.backgroundColor = getRandomHexColor();
 	}, 1000);
 	buttonStart.disabled = true;
